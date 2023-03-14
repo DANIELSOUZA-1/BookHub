@@ -1,0 +1,114 @@
+* {
+    font-family: 'Roboto Slab', serif;
+
+}
+
+.table::-webkit-scrollbar {
+  width: 0.5rem;
+}
+ 
+.table::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+ 
+.table::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid #e9e9e9;
+  border-radius: 2rem;
+}
+
+.card {
+    margin: 20rem;
+    border-bottom: 0;
+    align-items: center;
+    justify-content: center;
+    width: 80rem;
+    height: auto;
+    max-height: 50rem;
+    padding: 10rem;
+}
+
+.table {
+    overflow-y: auto;
+}
+
+.table-row {
+    display: flex;
+    max-width: fit-content;
+    gap: 12rem;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.table-row:hover {
+    background-color: #fae0e1;
+}
+
+.table-cell {
+    padding: 1em;
+}
+
+.table-row:nth-child(even) {
+    background: #e9e9e9;
+}
+
+.table-row:nth-child(even):hover {
+    background: #fae0e1;
+}
+
+.books-button-background {
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    margin: 1.65rem;
+    grid-auto-flow: column;
+    grid-column-gap: 10px;
+    background-color: #f5c0c3;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+    align-items: center;
+    justify-content: center;
+    transition: 0.4s;
+    cursor: pointer;
+  }
+  
+  .books-button-background:hover {
+    box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 2rem;
+    align-items: flex-start;
+    padding-left: 1rem;
+    color: #ed353f;
+    background-color: #eeb7b9;
+    width: 12rem;
+  }
+  
+  .books-button {
+    position: absolute;
+    fill: #ed353f;
+  }
+  
+  .books-button:hover {
+    fill: #ed353f;
+  }
+  
+  .books-label-button {
+    position: fixed;
+    max-width: 0;
+    margin-right: 0.5rem;
+    display: none;
+    right: 150px;
+    white-space: nowrap;
+    color: #ed353f;
+    font-weight: bold;
+    font-family: "Inter", sans-serif;
+    transition: max-width 0.3s ease-in-out;
+    transition: margin-left 0.3s ease-in-out;
+  }
+  
+  .books-label-button:hover {
+    color: #F2545B;
+  }
