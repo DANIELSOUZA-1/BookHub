@@ -1,5 +1,5 @@
 * {
-    font-family: 'Roboto Slab', serif;
+    font-family: 'Roboto', serif;
 
 }
 
@@ -25,7 +25,7 @@
     width: 80rem;
     height: auto;
     max-height: 50rem;
-    padding: 10rem;
+    padding: 4rem ;
 }
 
 .table {
@@ -112,3 +112,11 @@
   .books-label-button:hover {
     color: #F2545B;
   }
+
+  .list-title {
+    font-weight: 600;
+    font-size: 2rem;
+    letter-spacing: 0.05rem;
+    margin-bottom: 3rem;
+}
+

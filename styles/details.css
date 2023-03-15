@@ -2,6 +2,23 @@
     font-family: 'Roboto', serif;
 }
 
+
+.button-back {
+    position: fixed;
+    margin-top: -10rem;
+    margin-left: -5rem;
+    background-color: #f4666d;
+    border-radius: 1.3rem;
+    padding: 0.6rem 7rem;
+    opacity: 85%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.button-back:hover {
+    opacity: 100%;
+}
+
 .card {
     margin: 20rem;
     width: 40rem;
