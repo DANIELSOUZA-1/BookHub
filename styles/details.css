@@ -13,6 +13,8 @@
     opacity: 85%;
     cursor: pointer;
     transition: 0.3s;
+    color: #fff;
+    text-align: left;
 }
 
 .button-back:hover {
