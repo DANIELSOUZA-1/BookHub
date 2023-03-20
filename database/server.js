@@ -77,7 +77,7 @@ app.get('/book', (req, res) => {
 
 });
 
-app.patch('/editBook', async (req, res) => {
+app.patch('/book', async (req, res) => {
 	console.log(req.body)
 	const book = await Book.update(
 	{

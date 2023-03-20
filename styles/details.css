@@ -60,7 +60,7 @@ input:focus {
 
 .form-footer {
     display: flex;
-    margin-left: auto;
+    justify-content: space-between;
     gap: 1rem;
 }
 
@@ -86,6 +86,19 @@ button {
 
 .secondary-button:hover {
     background-color: #e1e1e1;
+}
+
+.delete-button {
+    background-color: #f0d8da;
+    color: #FF0000;
+    transition: 0.1s;
+    display: none;
+}
+
+.delete-button:hover {
+    scale: 1.01;
+    box-shadow: 1px 1px 0.5rem #f5a0a2;
+
 }
 
 .form-row {

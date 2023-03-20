@@ -44,8 +44,13 @@
                 <input type="text" id="releaseYear" name="releaseYear">
             </div>
             <div class="form-footer">
-                <button class="secondary-button" type="button" onclick="window.location.href = '/list/list.html'">Cancelar</button>
-                <button class="primary-button">Cadastrar</button>
+                <div>
+                    <button class="delete-button" id="delete-button" type="button" onclick="remove()">Deletar</button>
+                </div>
+                <div>
+                    <button class="secondary-button" type="button" onclick="window.location.href = '/list/list.html'">Cancelar</button>
+                    <button class="primary-button">Cadastrar</button>
+                </div>
             </div>
         </form>
     </div>

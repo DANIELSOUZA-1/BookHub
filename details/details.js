@@ -8,6 +8,11 @@ if (editMode) {
     form["author"].value = data.author
     form["publisher"].value = data.publisher
     form["releaseYear"].value = data.releaseYear
+
+    debugger
+
+    deleteButton = document.getElementById("delete-button")
+    deleteButton.style.display = 'inline'
 }
 
 async function onSubmit() {
@@ -36,7 +41,13 @@ async function create(body) {
 }
 
 async function patch(body) {
-    await axios.patch('http://localhost:8081/editBook', body).then(goToList())
+    await axios.patch('http://localhost:8081/book', body).then(goToList())
+}
+
+async function remove() {
+    debugger
+    body = getFormBody()
+    await axios.delete('http://localhost:8081/book', {params: {id: body.id}}).then(goToList())
 }
 
 function getFormBody() {
