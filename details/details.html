@@ -16,7 +16,8 @@
     <div class="card">
         <span class="button-back" onclick="window.location.href = '/list/list.html'">< Voltar à listagem</span>
         <span class="form-title">Cadastro de Livro</span>
-        <form onsubmit="onSubmit()">
+
+        <form onsubmit="onSubmit();return false" id="book">
             <!-- bookCode, title, author, publisher, releaseYear -->
             <div class="form-row">
                 <label for="title">Título</label>
@@ -49,6 +50,8 @@
         </form>
     </div>
 </body>
+
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 <script src="details.js"></script>
 
 </html>
